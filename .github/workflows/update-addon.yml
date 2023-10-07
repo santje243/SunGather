@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with: 
-          repository: bohdan-s/hassio-repository
+          repository: santje243/hassio-repository
           token: ${{ secrets.REPO_TOKEN }}
           submodules: true
 
