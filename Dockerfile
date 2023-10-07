@@ -16,8 +16,7 @@ COPY SunGather/ .
 VOLUME /logs
 VOLUME /config
 COPY SunGather/config-example.yaml /config/config.yaml
-COPY SunGather/registers-sungrow.yaml /config/registers-sungrow.yaml
 
 USER sungather
 
-CMD [ "python", "sungather.py", "-c", "/config/config.yaml", "-r", "/config/registers-sungrow.yaml" "-l", "/logs/" ]
+CMD [ "python", "sungather.py", "-c", "/config/config.yaml", "-l", "/logs/" ]
